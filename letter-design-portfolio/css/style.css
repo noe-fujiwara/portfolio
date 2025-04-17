@@ -1,0 +1,1008 @@
+@charset "utf-8";
+
+body {
+  overflow-x: hidden;
+
+  background-image: url(../images/background-exture.png);
+  background-position: center center;
+  background-size: cover;
+  background-attachment: fixed;
+  background-color: #f0d5c0;
+}
+
+.logo {
+  max-width: 1366px;
+  height: 83px;
+  margin: 0 auto;
+  padding-top: 1%;
+  background-color: transparent;
+  color: #42210b;
+}
+.main-list {
+  position: relative;
+  max-width: 1900px;
+  margin: -20px auto 30px;
+}
+.first-view-background {
+  display: block;
+
+/* width: 1201px; */
+  /* margin-left: 79px;
+    margin-right: 83px; */
+  width: 95%;
+  margin: 0 auto;
+}
+.header {
+  position: relative;
+  width: 1201px;
+}
+.first-view-illustration {
+  position: absolute;
+  bottom: 14px;
+
+/* height: 676px; */
+  left: 50%;
+  transform: translateX(-50%);
+  width: 48%;
+  max-width: 940px;
+}
+.first-view-word1 {
+  position: absolute;
+  top: 51%;
+  right: 5%;
+  transform: translateY(-50%);
+  margin: 0;
+  padding: 0;
+  color: #f0d5c0;
+  font-size: 52px;
+  font-family: "ten-mincho-antique", "Shippori Antique B1", serif;
+}
+.first-view-word2 {
+  position: absolute;
+  bottom: 60px;
+  left: 5%;
+  margin: 0;
+  padding: 0;
+  color: #f0d5c0;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 41px;
+  font-size: 18px;
+  font-family: "ten-mincho-antique", "Shippori Antique", serif;
+
+  writing-mode: vertical-rl;
+}
+
+.scrolldown {
+  height: 106px;
+  text-align: center;
+}
+
+.scrolldown__text {
+  position: relative;
+  font-family: "ten-mincho-antique", "Shippori Antique", serif;
+
+  writing-mode: vertical-rl;
+}
+.scrolldown__text::before {
+  position: absolute;
+  left: -5px;
+  width: 2px;
+  height: 106px;
+  background-color: #42210b;
+  content: "";
+}
+.contentbackground {
+  display: block;
+  width: 260px;
+  margin: -2%;
+  padding: 0;
+  border: 0;
+}
+.content-frame {
+  position: absolute;
+  top: 850px;
+  left: 38px;
+  width: 156px;
+}
+
+/* ==========
+main/共通
+==========*/
+main {
+  position: relative;
+}
+.wrapper {
+  position: relative;
+  max-width: 1020px;
+  margin: 0 auto;
+  padding: 24px 16px;
+}
+.wrapper::after {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 8px;
+  background-image: url(../images/line.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  content: "";
+}
+@media screen and (max-width: 1580px) {
+  main {
+    margin-left: 300px;
+  }
+}
+.chapter__title {
+  margin-top: -2%;
+  font-size: 72px;
+  font-family: "kaisei-decol", "Kaisei Opti", serif;
+}
+.chapter__title span {
+  display: block;
+  font-size: 60px;
+}
+.chapter__sub-title {
+  margin-top: 25%;
+}
+.chapter__title2 {
+  margin-top: -2%;
+  margin-left: 52%;
+  font-size: 72px;
+  font-family: "kaisei-decol", "Kaisei Opti", serif;
+}
+.chapter__title2 span {
+  display: block;
+  font-size: 60px;
+}
+.chapter__title3 {
+  margin-bottom: 63px;
+  margin-left: 53%;
+  font-size: 72px;
+  font-family: "kaisei-decol", "Kaisei Opti", serif;
+}
+.chapter__title3 span {
+  display: block;
+  font-size: 60px;
+}
+.chapter__text {
+  font-size: 18px;
+  line-height: 1.7;
+  margin-top: 7%;
+  font-family: "ten-mincho-antique", "Shippori Antique", serif;
+  letter-spacing: .19em;
+}
+.chapter__text--mb {
+  margin-top: 10%;
+}
+
+/* ==========
+目次
+==========*/
+.toc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all .3s ease; /* スムーズな切り替え */
+}
+.toc.fixed {
+  position: fixed;
+  top: 100px; /* 固定する位置 */
+  left: 0;
+  width: auto;
+}
+
+@media screen and (max-width: 1580px) {
+  .toc {
+    left: -300px;
+  }
+}
+
+.toc-list {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin-left: 40px;
+}
+.content-text li {
+  margin-bottom: 20px;
+  color: #f0d5c0;
+}
+.content-text__main {
+  margin-bottom: 14px;
+  color: #f0d5c0;
+  font-size: 21px;
+  font-family: "kaisei-decol", "Kaisei Opti", serif;
+}
+.profile-main-img {
+  width: 154px;
+  margin: 60px 0 36px;
+}
+.toc--bg {
+  display: block;
+  width: 140px;
+  height: 25px;
+  margin-bottom: 10px;
+  padding-left: 10px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  background-color: #f0d5c0;
+  color: #c23932;
+  line-height: 25px;
+}
+.toc.fixed {
+  position: fixed;
+  top: 40px;
+  left: 0;
+}
+
+/* ==========
+あらすじ
+==========*/
+.arasuzi {
+  display: flex;
+  align-items: center;
+}
+.arasuzi-img {
+  position: relative;
+  width: 50%;
+  max-width: 485px;
+}
+.arasuzi-bubble {
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: 30%;
+}
+.arasuzi__inner {
+  width: 50%;
+  padding-left: 60px;
+}
+.arasuzi-titell {
+  margin: 56px auto 38px;
+  color: #42210b;
+  font-weight: 700;
+  font-size: 72px;
+  line-height: 1.38;
+  font-family: "kaisei-decol", "Kaisei Opti", serif;
+}
+.arasuzi-text {
+  color: #42210b;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 2;
+  font-family: "ten-mincho-antique", "Shippori Antique B1", serif;
+}
+.arasuzi-text2 {
+  color: #42210b;
+  font-size: 17px;
+  line-height: 1.8;
+  margin-top: 10%;
+  font-family: "Shippori Antique", "Shippori Antique", serif;
+}
+
+/* ==========
+chapter01
+==========*/
+.chapter01__inner {
+  display: flex;
+}
+.chapter01__text-area01 {
+  width: 50%;
+}
+.chapter01-img {
+  position: relative;
+  width: 50%;
+  padding-left: 60px;
+}
+.chapter01-img2 {
+  position: absolute;
+  right: -50px;
+  bottom: 0px;
+  width: 45%;
+  /* padding-top: 35%;
+  padding-left: 84%; */
+}
+.chapter01-img3 {
+  position: absolute;
+  right: 170px;
+  bottom: -85px;
+  width: 20%;
+}
+.chapter01-img4 {
+  position: absolute;
+  width: 15%;
+  margin-left: 38%;
+  margin-top: -85px;
+}
+.chapter01-like-area {
+  width: 50%;
+}
+.fujiwara-like-img{
+  width: 49%;
+  position: absolute;
+  margin-left: -29px;
+  margin-top: -10px;
+}
+.chapter01-ashiato {
+  width: 50%;
+  padding-left: 25px;
+}
+.chapter01-ashiato .chapter__sub-title {
+  position: relative;
+}
+.deco-bubble {
+  position: absolute;
+  top: 84px;
+  right: -40px;
+  width: 50%;
+}
+/* ==========
+chapter02
+==========*/
+.chapter02__inner {
+  /* width: 1020px; */
+  margin-bottom: 8%;
+}
+/* ==========
+chapter02design
+==========*/
+.chapter02__design-area-img01 {
+  position: relative;
+  width: 45%;
+  margin-top: -7%;
+  margin-left: 0;
+}
+.chapter02__sub-title-design-area {
+  position: relative;
+  width: 100%;
+  margin-top: -30%;
+  margin-left: -51%;
+  color: #42210b;
+  font-size: clamp(16px, 2.2vw, 34px);
+  font-family: "ten-mincho-antique", "Shippori Antique", serif;
+  letter-spacing: .15em;
+
+  text-orientation: sideways;
+  writing-mode: vertical-rl;
+}
+.chapter02__design-area-img02 {
+  position: absolute;
+
+/* margin-top: -12%; */
+  bottom: -170px;
+  z-index: 1;
+  width: 263px;
+  margin-left: -3%;
+}
+.chapter02__text-chapter__text2--mb2 {
+  position: absolute;
+  z-index: 2;
+  margin-top: -9%;
+  margin-left: 0;
+  color: #42210b;
+  font-size: 17px;
+  line-height: 1.4;
+  font-family: "ten-mincho-antique", "Shippori Antique", serif;
+  letter-spacing: .12em;
+}
+.chapter2__text-chapter__text2-inner {
+  position: absolute;
+  z-index: 2;
+  margin-top: 7%;
+  color: #42210b;
+  font-size: 13px;
+  line-height: 1.3em;
+  font-family: "ten-mincho-antique", "Shippori Antique", serif;
+  letter-spacing: .01em;
+}
+/* ==========
+chapter02coding
+==========*/
+.chapter02__coding-area-img01 {
+  position: relative;
+  width: 45%;
+  margin-top: -34%;
+  margin-left: 51%;
+}
+.chapter02__sub-title-coding-area {
+  position: relative;
+  margin-top: 0;
+  margin-left: 51%;
+  color: #42210b;
+  font-size: clamp(16px, 2.2vw, 34px);
+  font-family: "ten-mincho-antique", "Shippori Antique", serif;
+  letter-spacing: .15em;
+}
+.chapter02__design-area {
+  position: relative;
+}
+.chapter02__coding-area-img02 {
+  position: absolute;
+  z-index: 1;
+  width: 263px;
+  margin-top: -9%;
+  margin-left: 77%;
+}
+.chapter02__text-chapter__text3--mb2 {
+  position: absolute;
+  z-index: 2;
+  margin-top: -6%;
+  margin-left: 80%;
+  color: #42210b;
+  font-size: 17px;
+  line-height: 1.4;
+  font-family: "ten-mincho-antique", "Shippori Antique", serif;
+  letter-spacing: .12em;
+}
+.chapter2__text-chapter__text3-inner {
+  position: absolute;
+  z-index: 2;
+  margin-top: 10%;
+  margin-left: 80%;
+  color: #42210b;
+  font-size: 13px;
+  line-height: 1.3em;
+  font-family: "ten-mincho-antique", "Shippori Antique", serif;
+  letter-spacing: .01em;
+}
+/* ==========
+chapter02illustration
+==========*/
+.chapter02__illustration-area-img01 {
+  position: relative;
+  width: 61%;
+  margin-top: -26%;
+  margin-left: 0;
+}
+.chapter02__sub-title-illustration-area {
+  position: relative;
+  margin-top: 26%;
+  margin-left: 49%;
+  color: #42210b;
+  font-size: clamp(16px, 2.2vw, 34px);
+  font-family: "ten-mincho-antique", "Shippori Antique", serif;
+  letter-spacing: .15em;
+}
+.chapter02__illustration-area-img02 {
+  position: absolute;
+  z-index: 1;
+  width: 263px;
+  margin-top: -21%;
+  margin-left: 63%;
+}
+.chapter02__text-chapter__text4--mb2 {
+  position: absolute;
+  z-index: 2;
+  margin-top: -18%;
+  margin-left: 66%;
+  color: #42210b;
+  font-size: 17px;
+  line-height: 1.4;
+  font-family: "ten-mincho-antique", "Shippori Antique", serif;
+  letter-spacing: .12em;
+}
+.chapter2__text-chapter__text4-inner {
+  position: absolute;
+  z-index: 2;
+  margin-top: -2%;
+  margin-left: 66%;
+  color: #42210b;
+  font-size: 13px;
+  line-height: 1.3em;
+  font-family: "ten-mincho-antique", "Shippori Antique", serif;
+  letter-spacing: .01em;
+}
+/* ==========
+chapter03
+==========*/
+.chapter01__inner {
+  display: flex;
+}
+.slick-slide {
+  padding: 0 12px;
+}
+/*
+.chapter03-websight,
+.chapter03-illustration,
+.chapter03-banner {
+  overflow: hidden;
+} */
+.chapter03-websight, .chapter03-illustration, .chapter03-banner {
+  position: relative;
+}
+.chapter03-websigh-img, .chapter03-illustration-work-img, .chapter03-banner-img {
+  width: 100vw;
+}
+
+.slick-list {
+  position: relative;
+  overflow: hidden; /* 左側のはみ出しを防ぐ */
+}
+
+.slick-track {
+  display: flex;
+  position: relative;
+  margin-right: -30vw; /* 右側にはみ出しを作る */
+}
+
+.slick-slide {
+  min-width: 300px; /* スライドの最小幅を指定 */
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.slick-slide img {
+  width: 100%;
+  height: auto;
+}
+
+/* ==========
+chapter03websight
+==========*/
+.chapter03 .chapter__title {
+  max-width: 1020px;
+  margin: 0 auto;
+}
+.furigana {
+  position: absolute;
+  margin-top: -7%;
+  margin-left: 19%;
+  font-size: 20px;
+  font-family: "ten-mincho-antique", "Shippori Antique", serif;
+}
+.chapter03-websigh-img {
+  display: flex;
+  position: relative;
+
+/* width: 30%; */
+  margin-top: 5%;
+
+  gap: 5%;
+}
+.chapter03-websigh-img2 {
+  position: absolute;
+  right: -10px;
+  z-index: 1;
+  width: 145px;
+  margin-top: -10%;
+}
+.chapter03-websigh-img3 {
+  position: relative;
+  width: 245px;
+  margin-top: 3%;
+  margin-left: 63%;
+  transition: all .5s ease-in-out;
+}
+.chapter03-websigh-img3:hover {
+  transform: scale(1.1);
+}
+.chapter03-websigh-texinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  font-size: 25px;
+  font-family: "kaisei-decol", "Kaisei Opti", serif;
+  text-align: center;
+
+  writing-mode: vertical-rl;
+}
+.chapter03-websigh-texinner2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-66%, -80%);
+  color: #f0d5c0;
+  font-size: 25px;
+  font-family: "ten-mincho-antique", "Shippori Antique", serif;
+}
+/* ==========
+chapter03illustration
+==========*/
+.chapter03-illustration-work-img {
+  display: flex;
+  position: relative;
+
+/* width: 30%; */
+  margin-top: 5%;
+
+  gap: 5%;
+}
+.chapter03-illustration-work-img2 {
+  position: absolute;
+  left: -20px;
+  z-index: 1;
+  width: 145px;
+  margin-top: -10%;
+}
+.chapter03-illustration-work-img3 {
+  position: relative;
+  width: 245px;
+  margin-top: 3%;
+  margin-left: 14%;
+  transition: all .5s ease-in-out;
+}
+.chapter03-illustration-work-img3:hover {
+  transform: scale(1.1);
+}
+.chapter03-illustration-work-texinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  font-size: 25px;
+  font-family: "kaisei-decol", "Kaisei Opti", serif;
+  text-align: center;
+
+  writing-mode: vertical-rl;
+}
+.chapter03-illustration-work-texinner2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-66%, -80%);
+  color: #f0d5c0;
+  font-size: 25px;
+  font-family: "ten-mincho-antique", "Shippori Antique", serif;
+}
+/* ==========
+chapter03banner
+==========*/
+.chapter03-banner-img {
+  display: flex;
+  position: relative;
+
+/* width: 30%; */
+  margin-top: 5%;
+
+  gap: 5%;
+}
+.chapter03-banner-img2 {
+  position: absolute;
+  right: -10px;
+  z-index: 1;
+  width: 145px;
+  margin-top: -10%;
+}
+.chapter03-banner-img3 {
+  position: relative;
+  width: 245px;
+  margin-top: 3%;
+  margin-left: 63%;
+  transition: all .5s ease-in-out;
+}
+.chapter03-banner-img3:hover {
+  transform: scale(1.1);
+}
+.chapter03-banner-texinner {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%);
+  height: 100%;
+  font-size: 25px;
+  font-family: "kaisei-decol", "Kaisei Opti", serif;
+  text-align: center;
+
+  writing-mode: vertical-rl;
+}
+.chapter03-banner-texinner2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+  transform: translate(-66%, -80%);
+  color: #f0d5c0;
+  font-size: 25px;
+  font-family: "ten-mincho-antique", "Shippori Antique", serif;
+}
+
+/* ==========
+chapter04
+==========*/
+.chapter01__inner {
+  display: flex;
+}
+.chapter04-maintext {
+  position: relative;
+  margin-top: 8%;
+  margin-left: 53%;
+  color: #42210b;
+  font-size: 18px;
+  line-height: 1.7;
+  font-family: "ten-mincho-antique", "Shippori Antique", serif;
+  letter-spacing: .17em;
+}
+.chapter04-maintext2 {
+  position: relative;
+  margin-top: 3%;
+  margin-left: 53%;
+  color: #42210b;
+  font-size: 18px;
+  line-height: 1.7;
+  font-family: "ten-mincho-antique", "Shippori Antique", serif;
+  letter-spacing: .17em;
+}
+.gpan-img {
+  position: relative;
+  width: 15%;
+  margin-top: -7%;
+  margin-left: 85%;
+}
+/* ==========
+chapter04name
+==========*/
+.chapter04-img {
+  position: relative;
+  width: 22%;
+  margin-top: -47%;
+  margin-left: -1%;
+}
+.chapter04-name-text1 {
+  position: absolute;
+  margin-top: -12%;
+  margin-left: 1%;
+  color: #c8a88f;
+  font-size: 18px;
+  font-family: "ten-mincho-antique", "Shippori Antique", serif;
+  letter-spacing: .17em;
+}
+.chapter04-name-text2 {
+  position: absolute;
+  margin-top: -6%;
+  margin-left: 1%;
+  color: #c8a88f;
+  font-size: 18px;
+  font-family: "ten-mincho-antique", "Shippori Antique", serif;
+  letter-spacing: .17em;
+}
+/* ==========
+chapter04company
+==========*/
+.chapter04-img2 {
+  position: relative;
+  width: 26%;
+  margin-top: -9%;
+  margin-left: 24%;
+}
+.chapter04-company-text1 {
+  position: absolute;
+  margin-top: -5%;
+  margin-left: 25%;
+  color: #c8a88f;
+  font-size: 18px;
+  font-family: "ten-mincho-antique", "Shippori Antique", serif;
+  letter-spacing: .17em;
+}
+/* ==========
+chapter04mail
+==========*/
+.chapter04-img3 {
+  position: relative;
+  width: 51%;
+  margin-top: 2%;
+  margin-left: -1%;
+}
+.chapter04-mail-text1 {
+  position: absolute;
+  margin-top: -5%;
+  margin-left: 1%;
+  color: #c8a88f;
+  font-size: 18px;
+  font-family: "ten-mincho-antique", "Shippori Antique", serif;
+  letter-spacing: .1em;
+}
+/* ==========
+chapter04inquiry
+==========*/
+.chapter04-img4 {
+  position: relative;
+  width: 51%;
+  margin-top: 2%;
+  margin-left: -1%;
+}
+.chapter04-inquiry-text1 {
+  position: absolute;
+  margin-top: -20%;
+  margin-left: 1%;
+  color: #c8a88f;
+  font-size: 18px;
+  line-height: 1.3;
+  font-family: "ten-mincho-antique", "Shippori Antique", serif;
+  letter-spacing: .17em;
+}
+/* ==========
+chapter04send
+==========*/
+.send-img {
+  position: relative;
+  width: 17%;
+  margin-top: -6%;
+  margin-left: 53%;
+  transition: all .5s ease-in-out;
+}
+.send-button:hover {
+  transform: scale(1.1);
+}
+.send-text {
+  position: absolute;
+  margin-top: -4.5%;
+  margin-left: 55.5%;
+  color: #f0d5c0;
+  font-size: 27px;
+  font-family: "kaisei-decol", "Kaisei Opti", serif;
+  letter-spacing: .17em;
+}
+
+/* ==========
+chapter05
+==========*/
+.chapter01__inner {
+  display: flex;
+}
+.atogaki-text {
+  position: absolute;
+  margin-top: -50%;
+  margin-left: 1%;
+  color: #42210b;
+  font-size: 18px;
+  line-height: 1.7;
+  font-family: "ten-mincho-antique", "Shippori Antique", serif;
+  letter-spacing: .17em;
+}
+.atogaki-text2 {
+  position: absolute;
+  margin-top: -25%;
+  margin-left: 1%;
+  color: #42210b;
+  font-size: 18px;
+  line-height: 1.7;
+  font-family: "ten-mincho-antique", "Shippori Antique", serif;
+  letter-spacing: .17em;
+}
+.ps-illustration-img {
+  position: relative;
+  width: 60%;
+  margin-top: -3%;
+  margin-left: 42%;
+}
+
+/* ==========
+SNS
+==========*/
+.sns__inner {
+  display: flex;
+  margin-top: 7%;
+}
+.chapter__title-sns {
+  position: relative;
+  margin-top: -6%;
+  margin-left: 43%;
+  color: #42210b;
+  font-size: 46px;
+  font-family: "kaisei-decol", "Kaisei Opti", serif;
+  letter-spacing: .17em;
+}
+.arrow1 {
+  position: relative;
+  width: 1%;
+  margin-bottom: 3%;
+  margin-left: 39%;
+}
+.arrow2 {
+  position: relative;
+  width: 1%;
+  margin-bottom: 3%;
+  margin-left: 39%;
+}
+.account li {
+  color: #42210b;
+  font-size: 18px;
+  font-family: "ten-mincho-antique", "Shippori Antique", serif;
+  letter-spacing: .17em;
+}
+.illustration-account {
+  position: absolute;
+  margin-top: -5%;
+  margin-left: 42%;
+}
+.design-account {
+  position: absolute;
+  margin-top: -5%;
+  margin-left: 42%;
+}
+.gpan-sns {
+  position: absolute;
+  width: 12%;
+  margin-top: -13%;
+  margin-left: 54%;
+}
+
+.footer {
+  position: relative;
+  margin-bottom: 1%;
+  margin-left: 35%;
+  color: #42210b;
+  font-size: 15px;
+  font-family: "ten-mincho-antique", "Shippori Antique", serif;
+}
+
+.chapter04-label {
+  display: none;
+}
+.chapter04-input {
+  display: block;
+  position: absolute;
+  left: 20px;
+  width: calc(100% - 40px);
+  padding: 5px;
+  border: none;
+  box-sizing: border-box;
+  background-color: #f8dba7;
+}
+.chapter04-name-text .chapter04-input-first-name {
+  top: 76px;
+}
+.chapter04-name-text .chapter04-input-last-name {
+  bottom: 30px;
+}
+
+.chapter04-company-text .chapter04-input {
+  position: absolute;
+  top: 44px;
+  left: 20px;
+}
+.chapter04-mail-text .chapter04-input {
+  top: 44px;
+}
+
+.chapter04-inquiry-text .chapter04-textarea {
+  display: block;
+  position: absolute;
+  top: 44px;
+  left: 20px;
+  width: calc(100% - 40px);
+  height: 200px;
+  padding: 5px;
+  border: none;
+  box-sizing: border-box;
+  background-color: #f8dba7;
+}
+
+.send-button {
+  position: relative;
+  width: 17%;
+  margin-top: -6%;
+  margin-left: 53%;
+}
+.submit {
+  position: absolute;
+  width: 168px;
+  margin-top: 3.5%;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+.submit p {
+  position: absolute;
+  top: 42%;
+  left: 44%;
+  transform: translate(-50%, -50%);
+  color: #f0d5c0;
+  font-size: 27px;
+  font-family: "kaisei-decol", "Kaisei Opti", serif;
+  letter-spacing: .17em;
+}
+
+.chapter04.wrapper {
+  padding-bottom: 100px;
+}

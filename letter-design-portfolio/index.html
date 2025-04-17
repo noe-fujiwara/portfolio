@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="jp">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>letter design</title>
+
+    <link rel="stylesheet" href="./CSS/reset.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"
+    />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="./CSS/style.css" />
+    <link href="https://github.com/noe-fujiwara/portfolio.git"/>
+
+    <!--Kaisei Opt-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kaisei+Opti:wght@400;700&family=Shippori+Antique&family=Shippori+Antique+B1&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--Shippori Antique-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+    <!-- 貂明朝アンチック(L/R/M)＆Kaisei Decol(B)-->
+    <script>
+      (function (d) {
+        var config = {
+            kitId: "gms3ytp",
+            scriptTimeout: 3000,
+            async: true
+          },
+          h = d.documentElement,
+          t = setTimeout(function () {
+            h.className =
+              h.className.replace(/\bwf-loading\b/g, "") + " wf-inactive";
+          }, config.scriptTimeout),
+          tk = d.createElement("script"),
+          f = false,
+          s = d.getElementsByTagName("script")[0],
+          a;
+        h.className += " wf-loading";
+        tk.src = "https://use.typekit.net/" + config.kitId + ".js";
+        tk.async = true;
+        tk.onload = tk.onreadystatechange = function () {
+          a = this.readyState;
+          if (f || (a && a != "complete" && a != "loaded")) return;
+          f = true;
+          clearTimeout(t);
+          try {
+            Typekit.load(config);
+          } catch (e) {}
+        };
+        s.parentNode.insertBefore(tk, s);
+      })(document);
+    </script>
+
+  </head>
+  <body>
+    <header id="header">
+      <div class="mainvisual">
+        <h1 class="logo">letter design</h1>
+        <div class="main-list" data-aos="fade-zoom-in" data-aos-delay="200" date-aos-duration="2000">
+          <img
+            src="./images/first-view-background.png"
+            alt="ファーストビュー背景"
+            class="first-view-background"
+          />
+          <img
+            src="./images/first-view-illustration.png"
+            alt="ファーストビューメインイラスト"
+            class="first-view-illustration"
+          />
+          <p class="first-view-word1">ワクワクで<br />届ける想いを。</p>
+          <p class="first-view-word2">WEB DESIGNER PORTFORIO SITE</p>
+        </div>
+      </div>
+    </header>
+
+    <div class="scrolldown" data-aos="flip-up" data-aos-delay="200" date-aos-duration="50000"><span class="scrolldown__text">SCROLL</span></div>
+
+    <main>
+      <section>
+        <div class="content">
+          <div class="content__img">
+            <div class="toc">
+              <picture>
+                <!-- <image src="./images/content.png" alt="目次枠" class="content-frame"> -->
+                <img
+                  src="./images/contentbackground.png"
+                  alt="目次背景"
+                  class="contentbackground"
+                />
+              </picture>
+              <div class="toc-list">
+                <div class="profile-main-img">
+                  <img src="./images/profile-main@2x.png" alt="" />
+                </div>
+                <p class="content-text__main">【目次】</p>
+                <ul class="content-text">
+                  <li class="content-text1">
+                    <a href="#arasuzi wrapper" class="toc--bg">あらすじ</a>
+                  </li>
+                  <li class="content-text2">
+                    <a href="#chapter01 wrapper"><span class="toc--bg">第1章</span>「藤原」って誰？</a>
+                  </li>
+                  <li class="content-text3">
+                    <a href="#chapter02 wrapper"><span class="toc--bg">第2章</span>何ができるのさ。</a>
+                  </li>
+                  <li class="content-text4">
+                    <a href="#chapter03 wrapper"><span class="toc--bg">第3章</span>藤原の軌跡(さくひん)</a>
+                  </li>
+                  <li class="content-text5">
+                    <a href="#chapter04 wrapper"><span class="toc--bg">第4章</span>藤原に会う</a>
+                  </li>
+                  <li class="content-text6">
+                    <a href="#atogaki wrapper"><span class="toc--bg">あとがき</span></a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="arasuzi wrapper">
+        <div class="arasuzi-img">
+          <img
+            src="./images/arasuzii-Illustration.png"
+            alt=""
+            data-aos="fade-zoom-in"
+            data-aos-delay="300"
+            data-aos-duration="2000"
+          />
+          <div class="arasuzi-bubble">
+            <img
+              class="arasuzi-bubble-img"
+              src="./images/arasuzi-fukidasi.png"
+              alt=""
+              data-aos="fade-zoom-in"
+              data-aos-delay="800"
+              date-aos-duration="50000"
+            />
+          </div>
+        </div>
+        <div class="arasuzi__inner">
+          <h2 class="arasuzi-titell" data-aos="fade-zoom-in" data-aos-delay="400" data-aos-duration="1000">あらすじ</h2>
+          <p class="arasuzi-text" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+            デザインは物語であり、魔法である。<br />どちらも想像力から生まれるものだ。<br />その想像力の源はワクワクする心だ。<br />その心は人と人を繋いでいく。
+          </p>
+          <p class="arasuzi-text2" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+            WEBデザイナーの藤原は、そんな考えのもと、「誰もが持っ<br />
+            ている“ワクワク”をくすぐり、誰かの“ワクワクする世界”<br />
+            を広め、コミュニティを繋げる手伝いをしたい。」そんな想<br />
+            いで、お客様のための魔法(デザイン)を届けていくのである。
+          </p>
+        </div>
+      </section>
+
+      <section class="chapter01 wrapper">
+        <div class="chapter01__inner">
+          <div class="chapter01__text-area01">
+            <h2 class="chapter__title" data-aos="fade-zoom-in" data-aos-delay="200" data-aos-duration="1000">
+              第1章
+              <span>「藤原」って誰？</span>
+            </h2>
+            <h3 class="chapter__sub-title" data-aos="fade-zoom-in" data-aos-delay="200" data-aos-duration="2000">
+              <img src="./images/fujiwara-about.png" alt="" />
+            </h3>
+            <p class="chapter__text chapter__text--mb" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+              2000年9月、東京で生まれ、東京で育つ。<br />
+              色彩検定3級、認定健康心理士の資格を取得済み。
+            </p>
+            <p class="chapter__text" data-aos="fade-up" data-aos-delay="400" data-aos-duration="1000">
+              小さい頃は、イラストやデザインに関わる仕事に就くこと、ディズニーキャストになることが夢だった。<br />
+              大学在学中にディズニーキャストになり、訪れるゲストにハピネスを届け、夢を実現。<br />
+              「やら」「枸櫞(くえん)」という2つの名前で趣味のイラストを描き、イベントに出展したりと作家としても活動中。
+            </p>
+            <div class="chapter01-img4" data-aos="fade-zoom-in" data-aos-delay="900" data-aos-duration="8000">
+              <img src="./images/gpan.png" alt="" />
+            </div>
+          </div>
+          <div class="chapter01-img">
+            <img src="images/self-portrait.png" alt="" data-aos="fade-zoom-in" data-aos-delay="200" data-aos-duration="2000">
+            <div class="chapter01-img2">
+              <img src="./images/name.png" alt="" data-aos="fade-up" data-aos-delay="200" date-aos-duration="2000">
+            </div>
+            <div class="chapter01-img3">
+              <img src="./images/post.png" alt="" data-aos="fade-up" data-aos-delay="400" date-aos-duration="2000">
+            </div>
+          </div>
+        </div>
+        <div class="chapter01__inner">
+          <div class="chapter01-like-area">
+            <h3 class="chapter__sub-title" data-aos="fade-zoom-in" data-aos-delay="200" data-aos-duration="2000">
+              <img src="./images/fujiwara-like's.png" alt="" />
+            </h3>
+            <div
+              class="fujiwara-like-img"
+              data-aos="fade-up" data-aos-delay="200" data-aos-duration="2000"
+            >
+              <img src="./images/like's-Illustration.png" alt="" />
+            </div>
+          </div>
+          <div class="chapter01-ashiato">
+            <h3 class="chapter__sub-title" data-aos="fade-zoom-in" data-aos-delay="400" data-aos-duration="2000">
+              <img src="./images/fujiwara'sfootsteps.png" alt="" data-aos="fade-up">
+              <span class="deco-bubble"
+                ><img src="./images/footprints.png" alt="" data-aos="fade-up" data-aos-delay="500" data-aos-duration="2000"
+              ></span>
+            </h3>
+            <p class="chapter__text" data-aos="fade-up" data-aos-delay="500" data-aos-duration="1000">
+              大学では、心理学部で<br />
+              臨床心理学を学んだ。<br />
+              大学在学中にディズニーキャスト<br />
+              として働き、訪れるゲストにハピネスを届けた。<br />
+              大学卒業後は、大手メガネチェーン店へ販売スタッフとして就職し、大学時や色彩検定で得た学びを活かし、販売から、店内ディスプレイ、POP制作を行った。<br />
+              現在は、デザイナーやイラストレーターとして、「ヒト・コト・モノ」の想いを届けることが目標。<br />
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter02 wrapper">
+        <div class="chapter02__inner">
+          <h2 class="chapter__title2" data-aos="fade-zoom-in" data-aos-delay="400" data-aos-duration="2000">
+            第2章
+            <span>何ができるのさ。</span>
+          </h2>
+          <div
+            class="chapter02__design-area"
+            data-aos="fade-up"
+            data-aos-delay="200"
+            data-aos-duration="1000"
+          >
+            <div class="chapter02__design-area-img01">
+              <img src="./images/web-design.png" alt="" />
+            </div>
+            <h3 class="chapter02__sub-title-design-area">#01ウェブデザイン</h3>
+            <div class="chapter02__design-area-img02">
+              <img src="./images/explanation-frame.png" alt="" />
+            </div>
+            <div class="chapter02__text-area01">
+              <p class="chapter02__text-chapter__text2--mb2">
+                HPやLP、バナー広<br />
+                告等のWeb制作ま<br />
+                で、ご要望の世界観<br />
+                を実現できるデザイ<br />
+                ンをご提案します。
+              </p>
+            </div>
+            <div class="chapter2__text-area__text2-inner">
+              <p class="chapter2__text-chapter__text2-inner">
+                【ツール】<br />illustrator / Photoshop
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="chapter02__coding-area"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+          >
+            <div class="chapter02__coding-area-img01">
+              <img src="./images/coding.png" alt="" />
+            </div>
+            <h3 class="chapter02__sub-title-coding-area">#02コーディング</h3>
+            <div class="chapter02__coding-area-img02">
+              <img src="./images/explanation-frame.png" alt="" />
+            </div>
+            <div class="chapter02__text-area02">
+              <p class="chapter02__text-chapter__text3--mb2">
+                デザインカンプを基に、<br />
+                HTML・CSSで再現し<br />
+                ます。動きのあるサイト<br />
+                制作、各デバイスに合<br />
+                わせたコーディングに<br />
+                も対応します。
+              </p>
+            </div>
+            <div class="chapter2__text-area__text3-inner">
+              <p class="chapter2__text-chapter__text3-inner">
+                【ツール】<br />HTML / CSS / Java Script
+              </p>
+            </div>
+          </div>
+
+          <div
+            class="chapter02__illustration-area"
+            data-aos="fade-up"
+            data-aos-duration="1000"
+          >
+            <h3 class="chapter02__sub-title-illustration-area">#03イラスト</h3>
+            <div class="chapter02__illustration-area-img01">
+              <img src="./images/Illustration.png" alt="" />
+            </div>
+            <div class="chapter02__illustration-area-img02">
+              <img src="./images/explanation-frame.png" alt="" />
+            </div>
+            <div class="chapter02__text-area03">
+              <p class="chapter02__text-chapter__text4--mb2">
+                デジタルツールを用い<br />
+                て、ご希望の雰囲気に<br />
+                合わせたテイストで作<br />
+                成します。当サイトで<br />
+                使用しているイラスト<br />
+                は自作のものです。<br />
+              </p>
+            </div>
+            <div class="chapter2__text-area__text4-inner">
+              <p class="chapter2__text-chapter__text4-inner">
+                【ツール】<br />ibisPaint / Adobe fresco
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter03 wrapper">
+        <div class="chapter03__inner">
+          <h2 class="chapter__title" data-aos="fade-zoom-in" data-aos-delay="200" data-aos-duration="2000">
+            第3章
+            <span>藤原の軌跡</span>
+          </h2>
+          <p class="furigana" data-aos="fade-zoom-in" data-aos-duration="2000">さくひん</p>
+          <div class="chapter03-websight">
+            <div class="chapter03-websigh-img">
+              <img src="./images/websight01.png" alt="" />
+              <img src="./images/websight02.png" alt="" />
+              <img src="./images/websight01.png" alt="" />
+              <img src="./images/websight02.png" alt="" />
+              <img src="./images/websight01.png" alt="" />
+              <img src="./images/websight02.png" alt="" />
+            </div>
+            <div class="chapter03-websigh-img2" data-aos="fade-zoom-in" data-aos-duration="1000">
+              <img src="./images/genre-frame.png" alt="" />
+              <p class="chapter03-websigh-texinner">ウェブサイト</p>
+            </div>
+            <ul>
+              <li class="chapter03-websigh-img3">
+                <a href="https://noeworksgallery.myportfolio.com/">
+                  <img src="./images/continuation.png" alt="" />
+                  <p class="chapter03-websigh-texinner2">続きを読む</p>
+                </a>
+            </div>
+            <div class="chapter03-websigh-tex">
+            </div>
+          </div>
+
+          <div class="chapter03-illustration">
+            <div class="chapter03-illustration-work-img">
+              <img src="./images/part3illustration01.png" alt="" />
+              <img src="./images/part3illustration02.png" alt="" />
+              <img src="./images/part3illustration03.png" alt="" />
+              <img src="./images/part3illustration04.png" alt="" />
+              <img src="./images/part3illustration05.png" alt="" />
+              <img src="./images/part3illustration06.png" alt="" />
+              <img src="./images/part3illustration08.png" alt="" />
+              <img src="./images/part3illustration09.png" alt="" />
+              <img src="./images/part3illustration10.png" alt="" />
+              <img src="./images/part3illustration11.png" alt="" />
+              <img src="./images/part3illustration12.png" alt="" />
+              <img src="./images/part3illustration13.png" alt="" />
+              <img src="./images/part3illustration14.png" alt="" />
+              <img src="./images/part3illustration15.png" alt="" />
+              <img src="./images/part3illustration16.png" alt="" />
+              <img src="./images/part3illustration17.png" alt="" />
+              <img src="./images/part3illustration18.png" alt="" />
+              <img src="./images/part3illustration19.png" alt="" />
+            </div>
+            <div class="chapter03-illustration-work-img2" data-aos="fade-zoom-in" data-aos-duration="1000">
+              <img src="./images/genre-frame.png" alt="" />
+              <p class="chapter03-illustration-work-texinner">イラスト</p>
+            </div>
+            <ul class="chapter03-illustration-work-img3">
+              <a href="https://noeworksgallery.myportfolio.com/">
+                <img src="./images/continuation.png" alt="" />
+                <p class="chapter03-illustration-work-texinner2">続きを読む</p>
+              </a>
+            </ul>
+            <div class="chapter03-illustration-work-tex">
+            </div>
+          </div>
+
+          <div class="chapter03-banner">
+            <div class="chapter03-banner-img">
+              <img src="./images/banner01.png" alt="" />
+              <img src="./images/banner02.png" alt="" />
+              <img src="./images/banner03.png" alt="" />
+              <img src="./images/banner04.png" alt="" />
+              <img src="./images/banner05.png" alt="" />
+              <img src="./images/banner06.png" alt="" />
+              <img src="./images/banner07.png" alt="" />
+            </div>
+            <div class="chapter03-banner-img2" data-aos="fade-zoom-in" data-aos-duration="1000">
+              <img src="./images/genre-frame.png" alt="" />
+              <p class="chapter03-banner-texinner">バナー</p>
+            </div>
+            <ul class="chapter03-banner-img3">
+              <a href="https://noeworksgallery.myportfolio.com/">
+                <img src="./images/continuation.png" alt="" />
+                <p class="chapter03-banner-texinner2">続きを読む</p>
+              </a>
+            </ul>
+            <div class="chapter03-banner-tex">
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="chapter04 wrapper">
+        <div class="chapter04__inner">
+          <h2 class="chapter__title3" data-aos="fade-zoom-in" data-aos-delay="200" data-aos-duration="2000">
+            第4章
+            <span>藤原に会う。</span>
+          </h2>
+          <p class="chapter04-maintext" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+            デザインやイラストに関することなど、制作での<br />
+            お悩みについて、お気軽にご相談・お問い合わ<br />
+            せください。InstagramのDMでも承っており<br />
+            ます。
+          </p>
+          <p class="chapter04-maintext2" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
+            それぞれが持つ個性(らしさ)でお客様の想い<br />
+            描く世界観をつくり、「いいね！」「素敵！」など<br />
+            のワクワクを届けていきます。
+          </p>
+          <img class="gpan-img" src="./images/gpan.png" alt="" data-aos="fade-zoom-in" data-aos-delay="900" data-aos-duration="8000">
+         
+          <form action="your_form_handler.php" method="POST" data-aos="fade-up" data-aos-duration="1000">
+            <div class="chapter04-name-fream">
+              <div class="chapter04-img">
+                <img src="./images/name2.png" alt="名前" />
+                <div class="chapter04-name-text">
+                  <label for="last-name" class="chapter04-label">姓</label>
+                  <input
+                    type="text"
+                    id="last-name"
+                    name="last_name"
+                    class="chapter04-input chapter04-input-first-name"
+                    placeholder="デザイン"
+                    required
+                  />
+
+                  <label for="first-name" class="chapter04-label">名</label>
+                  <input
+                    type="text"
+                    id="first-name"
+                    name="first_name"
+                    class="chapter04-input chapter04-input-last-name"
+                    placeholder="太郎"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="chapter04-company-fream">
+              <div class="chapter04-img2">
+                <img src="./images/companynametradename.png" alt="社名・屋号" />
+                <div class="chapter04-company-text">
+                  <label for="company-name" class="chapter04-label"
+                    >社名・屋号</label
+                  >
+                  <input
+                    type="text"
+                    id="company-name"
+                    name="company_name"
+                    class="chapter04-input"
+                    placeholder="デザインワークス〇〇株式会社"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="chapter04-mail-fream">
+              <div class="chapter04-img3">
+                <img src="./images/email.png" alt="メールアドレス" />
+                <div class="chapter04-mail-text">
+                  <label for="email" class="chapter04-label"
+                    >メールアドレス</label
+                  >
+                  <input
+                    type="email"
+                    id="email"
+                    name="email"
+                    class="chapter04-input"
+                    placeholder="magical.design@〇〇〇.com"
+                    required
+                  />
+                </div>
+              </div>
+            </div>
+
+            <div class="chapter04-inquiry-fream">
+              <div class="chapter04-img4">
+                <img
+                  src="./images/Inquiry-details.png"
+                  alt="お問い合わせ内容"
+                />
+                <div class="chapter04-inquiry-text">
+                  <label for="message" class="chapter04-label"
+                    >お問い合わせ内容</label
+                  >
+                  <textarea
+                    id="message"
+                    name="message"
+                    class="chapter04-textarea"
+                    placeholder="お気軽に、デザイン・イラスト・見積などについてご相談ください。"
+                    required
+                  ></textarea>
+                </div>
+              </div>
+            </div>
+
+            <input type="hidden"NAME="_to"VALUE="	noesan3.oshigoto@gmail.com">
+            <div class="send-button">
+              <a href="" type="submit" class="submit">
+                <img src="./images/send.png" alt="" />
+                <p>送信</p>
+              </a>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <section class="atogaki wrapper">
+        <div class="atogaki__inner" data-aos="fade-zoom-in" data-aos-duration="2000">
+          <h2 class="chapter__title">あとがき</h2>
+        </div>
+        <img
+          class="ps-illustration-img"
+          src="./images/ps-illustration.png"
+          alt=""
+          data-aos="fade-zoom-in" 
+          data-aos-delay="500"
+          data-aos-duration="2000">
+        <p class="atogaki-text" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
+          「maigcal design(当サイト)」を読破していただき、<br />
+          ありがとうございました。<br />
+          当サイトは、マンガや手紙のような「ワクワクが擽られ<br />
+          る魔法のような温かい時間」と「想いを届ける」をイメ<br />
+          ージし、イラストやレイアウト、コーディングまでデザ<br />
+          インしました。このサイトを通して、少しでもみなさま<br />
+          のワクワクに刺激が走っていたら幸いです。
+        </p>
+        <p class="atogaki-text2" data-aos="fade-up"  data-aos-delay="400" data-aos-duration="1000">
+          誰もが持つ個性(らしさ)を世界観に落とし込み、<br />
+          「ワクワクの力でコミュニティを広げる魔法」を届けられ<br />
+          るよう、日々スキルアップに励んでいきます。<br />
+          みなさまとご一緒にお仕事ができる日を楽しみにして<br />
+          おります。
+        </p>
+      </section>
+
+      <section class="sns">
+        <div class="sns__inner">
+          <h2 class="chapter__title-sns">SNS</h2>
+        </div>
+        <ul class="account">
+          <li>
+            <a href="">
+              <img class="arrow1" src="./images/arrow.png" alt="" />
+              <p class="illustration-account">イラストアカウント</p>
+            </a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/noe_fuji_design/">
+              <img class="arrow2" src="./images/arrow.png" alt="" />
+              <p class="design-account">デザインアカウント</p>
+            </a>
+          </li>
+        </ul>
+        <img class="gpan-sns" src="./images/gpan.png" alt="" />
+      </section>
+
+      <p class="footer">©︎2025 letter. design all right reserved.</p>
+    </main>
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- slickのJavaScript -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
